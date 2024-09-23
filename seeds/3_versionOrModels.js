@@ -1,13 +1,33 @@
 /**
+/**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> } 
  */
-exports.seed = async function(knex) {
+const timestamp = new Date();
+export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex('table_name').del()
-  await knex('table_name').insert([
-    {id: 1, colName: 'rowValue1'},
-    {id: 2, colName: 'rowValue2'},
-    {id: 3, colName: 'rowValue3'}
-  ]);
-};
+  await knex("versionOrModels").del();
+  await knex("versionOrModels").insert(
+    [
+      {
+        id: 1,
+        title: "A",
+        information: "sjnsdv [sv sdv sdv sdv sdv sd vs vs dfv sdv sdv sd vsd vsd vsdvsdv",
+      },
+      {
+        id: 2,
+        title: "E",
+        information: "sjnsdv [sv sdv sdv sdv sdv sd vs vs dfv sdv sdv sd vsd vsdvsdv",
+      },
+      {
+        id: 3,
+        title: "I",
+        information: "sjnsdv [sv sdv sdv sdv sdv sd vs vs dfv sdv sdv sd vsd vsd vsdvsdv",
+      },
+      {
+        id: 4,
+        title: "O",
+        information: "sjnsdv [sv sdv sdv sdv sdv sd vs vs dfv sdv sdv sd vsd vsd vsdvsdv",
+      }
+    ])
+}

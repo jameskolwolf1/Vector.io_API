@@ -1,0 +1,13 @@
+.env
+dist
+dist-ssr
+*.local
+*.log
+node_modules/*
+.vscode/*
+.idea
+.DS_Store
+*.suo
+*.sln
+*.sw?
+

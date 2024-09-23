@@ -5,8 +5,8 @@
  */
 export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex("table_name").del();
-  await knex("table_name").insert([
+  await knex("computerComponents").del();
+  await knex("computerComponents").insert([
     {
       id: 1,
       title: "DisplayPort Cable (DP)",
