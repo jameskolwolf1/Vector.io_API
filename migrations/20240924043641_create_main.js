@@ -23,32 +23,29 @@ export function up(knex){
         table.string('image_product').notNullable();
         table.string('image_info').notNullable();
         table.string('general_info').notNullable();
-        table.integer('versionOrModels_id').unsigned().references('versionOrModels.id');
-        table.integer('solutions_id').unsigned().references('solutions.id');
+        table.integer('versionOrModel_id').notNullable().references('id').inTable('versionOrModels').onDelete("CASCADE");
+        table.integer('solutions_id').notNullable().references('id').inTable('solutions');
         table.string('category').notNullable();
 
+    })
+    .createTable('posts', (table) => {
+        
+        table.increments('id').primary();
+        table.integer('computerComponents_id').unsigned().references('id').inTable('computerComponents');
+        table.integer('comments_id').unsigned().references('id').inTable('comments');
+        table.string('title').notNullable();
+        table.timestamp('post_date').defaultTo(knex.fn.now());
+        table.string('article_title').references('title').inTable('computerComponents');
+
+
+    }).createTable('comments', (table) => {
+
+        table.increments('id').primary();
+        table.integer('post_id').unsigned().references('post.id');
+        table.string('text').notNullable();
+        table.integer('likes').notNullable().defaultTo(0);
 
     })
-    // .createTable('posts', (table) => {
-        
-    //     table.increments('id').primary();
-    //     table.integer('computerComponents_id').unsigned().references('computerComponents.id');
-    //     table.integer('comments_id').unsigned().references('comments.id');
-    //     table.string('title').notNullable();
-    //     table.timestamp('post_date').defaultTo(knex.fn.now());
-    //     table.string('article_title').unsigned().references('id').inTable('articles');
-
-
-    // })
-    
-    // .createTable('comments', (table) => {
-
-    //     table.increments('id').primary();
-    //     table.integer('post_id').unsigned().references('post.id');
-    //     table.string('text').notNullable();
-    //     table.integer('likes').notNullable().defaultTo(0);
-
-    // })
     
 }
 
