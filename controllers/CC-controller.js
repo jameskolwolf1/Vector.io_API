@@ -85,10 +85,41 @@ export const getPostsByComputerComponentId = async (req, res) => {
         }
         const postsList = await knex("posts").where({computerComponents_id : id});
         return res.status(200).json(postsList);
-        
     } catch (error) {
         
         res.status(400).send("Error getting posts by component ID")
     }
+}
 
+export const postPostsByComputerComponentId = async (req, res) => {
+
+    let { id } = req.params; 
+
+
+    if(!req.body.title || !req.body.description){
+
+        console.log(req.body);
+        return res.status(400).json({
+            message: "HELLO",
+        });
+    }
+
+    try {
+
+        const data = await knex("posts").insert({
+            
+            title: req.body.title,
+            description: req.body.description,
+            computerComponents_id: id
+
+        });
+
+        const newPostsId = data[0];
+        const createPosts = await knex("posts").where({id: newPostsId}).first();
+        res.status(201).json(createPosts);
+        
+    } catch (error) {
+        
+        res.status(560).send("Error getting posts by component ID Error" + error);
+    }
 }

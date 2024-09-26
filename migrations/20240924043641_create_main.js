@@ -29,23 +29,23 @@ export function up(knex){
         table.integer("computerComponents_id");
         table.string('text').notNullable();
 
-    }).createTable('comments', (table) => {
+    }).createTable('posts', (table) => {
         
         table.increments('id').primary();
+        table.integer('computerComponents_id').unsigned().references('id').inTable('computerComponents');
+        table.string('title').notNullable();
+        table.string('description').notNullable();
+        table.timestamp('post_date').defaultTo(knex.fn.now());
+    })
+    .createTable('comments', (table) => {
+        
+        table.increments('id').primary();
+        table.integer('posts_id').unsigned().references('id').inTable('posts');
         table.string('text').notNullable();
         table.integer('likes').notNullable().defaultTo(0);
 
     })
-    .createTable('posts', (table) => {
-        
-        table.increments('id').primary();
-        table.integer('computerComponents_id').unsigned().references('id').inTable('computerComponents');
-        table.integer('comments_id').unsigned().references('id').inTable('comments');
-        table.string('title').notNullable();
-        table.timestamp('post_date').defaultTo(knex.fn.now());
-        table.string('article_title').notNullable();
-
-    })
+    
 }
 
 /**
