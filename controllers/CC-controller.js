@@ -72,3 +72,23 @@ export const getVersionOrModelByComputerComponentId = async (req, res) => {
         res.status(400).send("Error getting version or Models by component ID");
     }
 }
+export const getPostsByComputerComponentId = async (req, res) => {
+
+    const {id} = req.params;
+
+    try {
+        const component = await knex("computerComponents").where({id}).first();
+
+        if(component === null || component === undefined){
+
+            res.status(404).send("Error getting Computer Components");
+        }
+        const postsList = await knex("posts").where({computerComponents_id : id});
+        return res.status(200).json(postsList);
+        
+    } catch (error) {
+        
+        res.status(400).send("Error getting posts by component ID")
+    }
+
+}

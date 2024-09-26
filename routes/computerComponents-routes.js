@@ -6,5 +6,5 @@ router.get("/", computerComponents.getComputerComponent);
 router.get("/:id", computerComponents.getComputerComponentById);
 router.get("/:id/solutions", computerComponents.getSolutionByComputerComponentId);
 router.get("/:id/versionOrModels", computerComponents.getVersionOrModelByComputerComponentId);
-
+router.get("/:id/posts", computerComponents.getPostsByComputerComponentId);
 export default router;
