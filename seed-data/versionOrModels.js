@@ -56,6 +56,47 @@ export default [
         info2: "Bandwidth: 77.37 Gbps and an effective 69.54 Gbps for uncompressed data",
         info3: "Key Features: DisplayPort 2.0 leveraged the USB-C Alt Mode, allowing it to work over USB-C connections. This was especially useful in laptops and compact devices where USB-C had become the default port type."
       },
+      {
+        id: 8,
+        computerComponents_id: 2,
+        title: "HDMI 2.0 (2013)",
+        info1: "Max Resolution: 4K at 60 Hz",
+        info2: "Bandwidth: 18Gbps",
+        info3: "Key Features: Enhanced support for 4K video at 60 Hz, HDR for improved contrast and color, and support for up to 32 audio channels."
+      },
+      {
+        id: 9,
+        computerComponents_id: 2,
+        title: "HDMI 2.0a (2015)",
+        info1: "Max Resolution: 4K at 60 Hz",
+        info2: "Bandwidth: 18 Gbps",
+        info3: "Key Features: Introduced support for HDR10 metadata, enhancing HDR performance."
+      },
+      {
+        id: 10,
+        computerComponents_id: 2,
+        title: "HDMI 2.0b (2016)",
+        info1: "Max Resolution: 4K at 60 Hz",
+        info2: "Bandwidth: 18 Gbps",        
+        info3: "Key Features: Added Hybrid Log-Gamma (HLG) support for HDR, primarily for broadcast."
+      },
+      {
+        id: 11,
+        computerComponents_id: 2,
+        title: "HDMI 2.1 (2017)",
+        info1: "Max Resolution: 8K at 60 Hz, 4K at 120 Hz",
+        info2: "Bandwidth: 48 Gbps",
+        info3: "Key Features: Major update with 48 Gbps bandwidth, supporting 8K and 4K at higher refresh rates, along with features like Variable Refresh Rate (VRR) for smoother gaming and enhanced audio return channel (eARC)."
+      },
+      {
+        id: 8,
+        computerComponents_id: 2,
+        title: "HDMI 2.1a (2022)",
+        info1: "Max Resolution: 8K at 60 Hz, 4K at 120 Hz",
+        info2: "Bandwidth: 48 Gbps",
+        info3: "Introduced Source-Based Tone Mapping (SBTM) to optimize HDR dynamically based on the content.",
+      },
+      
       
 
 ]
