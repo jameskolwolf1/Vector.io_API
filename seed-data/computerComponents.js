@@ -29,12 +29,63 @@ export default [
       },
       {
         id: 4,
-        title: "HDMI Cable",
-        image_product: "/HDMI/image0.jpeg",
-        image_info: "/HDMI/image0_info.svg",
+        title: "DVI Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
         general_info:
           "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
 
         category: "cable"
       },
+      {
+        id: 5,
+        title: "VGA Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
+        general_info:
+          "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
+
+        category: "cable"
+      },
+      {
+        id: 6,
+        title: "Cat5 Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
+        general_info:
+          "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
+
+        category: "network | cable"
+      },
+      {
+        id: 7,
+        title: "Cat5e Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
+        general_info:
+          "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
+
+        category: "network | cable"
+      },
+      {
+        id: 8,
+        title: "Cat1 Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
+        general_info:
+          "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
+
+        category: "network | cable"
+      },
+      {
+        id: 9,
+        title: "Cat1 Cable",
+        image_product: "/DVI/image0.jpeg",
+        image_info: "/DVI/image0_info.svg",
+        general_info:
+          "HDMI means High-Definition Multimedia Interface, a standard for simultaneously transmitting digital video and audio from a source, such as a computer or TV cable box, to a computer monitor, TV or projector.Originally developed by a consortium of electronics manufacturers, it has been widely adopted with almost all televisions and computer monitors supporting the interface.The goal of the HDMI initiative back in 2002 was to improve on existing smaller connector, adding support for embedded audio and delivering a higher resolution video signal.Such was HDMI's success that by 2008, shipments of HDMI - enabled devices exceeded those of DVI.By the end of 2009, all HDTVs had at least one HDMI port.",
+
+        category: "network | cable"
+      },
+
 ];
