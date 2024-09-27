@@ -40,11 +40,11 @@ export function up(knex){
     .createTable('comments', (table) => {
         
         table.increments('id').primary();
-        table.integer('posts_id').unsigned().references('id').inTable('posts');
+        table.integer('posts_id');
         table.string('text').notNullable();
         table.integer('likes').notNullable().defaultTo(0);
 
-    })
+    });
     
 }
 

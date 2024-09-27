@@ -98,9 +98,9 @@ export const postPostsByComputerComponentId = async (req, res) => {
 
     if(!req.body.title || !req.body.description){
 
-        console.log(req.body);
+
         return res.status(400).json({
-            message: "HELLO",
+            message: "Please fill all the felids",
         });
     }
 
@@ -120,6 +120,6 @@ export const postPostsByComputerComponentId = async (req, res) => {
         
     } catch (error) {
         
-        res.status(560).send("Error getting posts by component ID Error" + error);
+        res.status(400).send("Error getting posts by component ID Error" + error);
     }
 }
