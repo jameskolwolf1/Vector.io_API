@@ -96,7 +96,37 @@ export default [
         info2: "Bandwidth: 48 Gbps",
         info3: "Introduced Source-Based Tone Mapping (SBTM) to optimize HDR dynamically based on the content.",
       },
-      
-      
+      {
+        id: 9,
+        computerComponents_id: 3,
+        title: "Type-C /USB 3.1 (2013)",
+        info1: "Max Data Rate: 10 Gbps",
+        info2: "Max Power Delivery: 100 Watts (via USB PD)",
+        info3: "Further increased data transfer rates; introduced USB Type-C.",
+      },
+      {
+        id: 10,
+        computerComponents_id: 3,
+        title: "Type-C /USB 3.2 (2017)",
+        info1: "Max Data Rate: Up to 20 Gbps",
+        info2: "Max Power Delivery: 100 Watts (via USB PD)",
+        info3: "Dual-lane operation for higher speeds; requires USB Type-C.",
+      },
+      {
+        id: 11,
+        computerComponents_id: 3,
+        title: "Type-C /USB 4 (2013)",
+        info1: "Max Data Rate: Up to 40 Gbps",
+        info2: "Max Power Delivery: 100 Watts (via USB PD)",
+        info3: "Combines Thunderbolt 3 support; backward compatible with USB 3.x and USB 2.0",
+      },
+      {
+        id: 8,
+        computerComponents_id: 3,
+        title: "EXAMPLE",
+        info1: "",
+        info2: "",
+        info3: "",
+      },
 
 ]
